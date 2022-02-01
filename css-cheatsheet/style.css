@@ -1,0 +1,210 @@
+/* h1{
+    color: green;
+} */
+
+/* reset everything */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: black;
+    font-size: large;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font: normal 16px/1.5em "Trebuchet MS", Arial, Helvetica, sans-serif;
+    line-height: 1.6em;  /* 行高 */
+}
+
+a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+/* mouse hover */
+a:hover {
+    text-decoration: underline;
+}
+
+/* mouse click */
+a:active {
+    color: blue;
+}
+
+/* mouse visited */
+a:visited {
+    color: black;
+}
+
+.container {
+    width: 80%;
+    margin: 50px 100px;
+    border: 5px 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* padding | border | margin */
+
+.box-1 {
+    background-color: #333;
+    color: #fff;
+
+    padding: 20px 10px;
+
+    border: 10px solid #ddd;
+    border-bottom: 20px dashed #ddd;
+
+    margin: 20px 0;
+}
+
+.box-1 h1 {
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    /* what's this? */
+    text-decoration: underline;
+    text-transform: capitalize;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box-2 {
+    border: 3px dotted lightgray;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories {
+    color: #333;
+    color-scheme: dark;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    padding: 0px;
+    list-style: square;
+}
+
+.categories li {
+    padding: 5px 0;
+    border: dotted 1px #333;
+    border-radius: 10px;
+    list-style: circle;
+}
+
+.my-form {
+    border: 3px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.my-form .form-group {
+    padding-bottom: 0.2em;
+}
+
+.my-form label{
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+.my-form input[type="text"], .my-form input[type="password"], .my-form textarea {
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 0.2em;
+}
+
+.block {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    /* make width of the apply to the block */
+    box-sizing: border-box;
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar-block {
+    float: right;
+    width: 30%;
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box {
+    width: 800px;
+    height: 500px;
+    border: 1px solid #111;
+    margin-top: 50px;
+    position: relative;
+
+    background-image: url('../images/shuwarin.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.p-box h2 {
+    position: absolute;
+    top:100px;
+    left: 100px;
+}
+
+.p-box p {
+    position: absolute;
+    top:40px;
+    right: 100px;
+
+}
+
+.fix-me {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
+
+.my-list li:first-child {
+    border-top: 1px solid #333;
+}
+
+.my-list li:last-child {
+    border-bottom: 1px solid #333;
+}
+
+.my-list li:nth-child(even) {
+    background-color: lightgray;
+}
+
